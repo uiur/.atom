@@ -1,12 +1,14 @@
 "*":
   editor:
     invisibles: {}
-    fontSize: 21
+    fontSize: 25
+    softWrap: true
   core:
     disabledPackages: [
       "atom-lint"
       "emmet"
       "linter-coffeelint"
+      "atom-ctags"
     ]
     themes: [
       "atom-dark-ui"
@@ -25,7 +27,20 @@
   "atom-lint": {}
   linter:
     lintOnChange: false
+    subtleLinterErrors: [
+      "jsonlint"
+      "htmlhint"
+    ]
+    ignoredLinterErrors: [
+      "rubocop"
+      "shellcheck"
+    ]
+    lintOnFly: false
   react: {}
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "autocomplete-plus": {}
   "go-plus": {}
+  Zen:
+    fullscreen: false
+  "merge-conflicts": {}
