@@ -67,9 +67,14 @@
               }
 
               render () {
-
+                return (
+                  <span>${1:ClassName}</span>
+                )
               }
             }
 
-            module.exports = ${1:ClassName}
+            ${1:ClassName}.displayName = '${1:ClassName}'
+            ${1:ClassName}.propTypes = {}
+
+            module.exports = ${1:ClassName}$0
             """
